@@ -1,30 +1,20 @@
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+
+/* Media Query ---------------------------*/
+import { useMediaQuery } from "@/Common/useMediaQuery";
 
 /* Components ---------------------------*/
-import Inset from './Inset.jsx';
-import SiteLogo from './SiteLogo/SiteLogo.jsx';
+import MediumLarge from './MediumLarge';
+import Small from './Small';
+
+
 
 const Header = () => {
+    const { isMediumAndUp } = useMediaQuery();
+
     return (
         <HeaderStyled className="Header">
-            <Inset>
-                <div className="inset">
-                    <div className="logo">
-                        <SiteLogo />
-                    </div>
-                    <div className="menus">
-                        <nav className="mainMenu">
-                            <NavLink to={'/'} end>
-                                Home
-                            </NavLink>
-                            <NavLink to={'/staff'}>Staff</NavLink>
-                            <NavLink to={'/contact'}>Contact</NavLink>
-                            <NavLink to={'/course-work'}>Course</NavLink>
-                        </nav>
-                    </div>
-                </div>
-            </Inset>
+            {isMediumAndUp ? <MediumLarge /> : <Small />}
         </HeaderStyled>
     );
 };
