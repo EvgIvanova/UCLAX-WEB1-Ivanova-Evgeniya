@@ -1,0 +1,40 @@
+{
+  "submissions": [
+    {
+      "id": "2b009fa2-9ebc-4ea0-ad9e-84c94b0c8e51",
+      "name": "Mitch",
+      "email": "meatch@me.com",
+      "message": "Some message would go here."
+    },
+    {
+      "id": "931b2b60-24de-4ec8-9f1f-aafd17f0a404",
+      "name": "George",
+      "email": "george@me.com",
+      "message": "Another message"
+    },
+    {
+      "id": "9792672f-f6cb-4b29-98c4-5f45ba24b66b",
+      "name": "Tan",
+      "email": "tan@me.com",
+      "message": "A message from Tan"
+    },
+    {
+      "id": "8811bca8-be36-4dc2-9acf-efefabcaa939",
+      "name": "Slim Shady",
+      "email": "slim@shady.com",
+      "message": "Test"
+    },
+    {
+      "id": "31be987e-b549-4094-bafe-4ecb7d78b87f",
+      "name": "Slim Shady",
+      "email": "slim@shady.com",
+      "message": "Test"
+    },
+    {
+      "id": "4873cb16-3381-4a72-a422-bd73cc09e2bb",
+      "name": "Jane Johnson",
+      "email": "Jane@shady.com",
+      "message": "Blablabla"
+    }
+  ]
+}
