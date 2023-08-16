@@ -27,7 +27,7 @@ const EssayStyled = styled.div`
 
     .answer {
         background-color: #eee;
-        padding: 20px 20px 10px 20px;
+        padding: 20px;
 
 		p {
 			margin: 5px;
