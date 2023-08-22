@@ -11,25 +11,25 @@ import { Carousel } from 'react-responsive-carousel';
 import Slide from './Slide';
 
 const SlideList = () => {
-    return (
-        <SlideListStyled className='SlideList'>
-            <Carousel>
+	return (
+		<SlideListStyled className='SlideList'>
+			<Carousel>
 
-                {
-                    slidesData.map((slide) => {
-                        return <Slide key={slide.id} slide={slide} />;
-                    })
-                }
-            </Carousel>
+				{
+					slidesData.map((slide) => {
+						return <Slide key={slide.id} slide={slide} />;
+					})
+				}
+			</Carousel>
 
-        </SlideListStyled>
-    );
+		</SlideListStyled>
+	);
 };
 
 export default SlideList;
 
 const SlideListStyled = styled.div`
     .carousel .slide .legend {
-        background-color: #034444;
+        background-color: #F49387;
     }
 `;

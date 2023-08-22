@@ -2,26 +2,28 @@ import styled from 'styled-components';
 
 const Tab = ({ tab, curTab, curTabUpdate }) => {
 
-    const onClick = () => {
-        curTabUpdate(tab);
-    };
+	const onClick = () => {
+		curTabUpdate(tab);
+	};
 
-    const theClassName = (curTab.id === tab.id) ? 'Tab selected' : 'Tab';
+	const theClassName = (curTab.id === tab.id) ? 'Tab selected' : 'Tab';
 
-    return (
-        <TabStyled className={theClassName} onClick={onClick}>
-            {tab.title}
-        </TabStyled>
-    );
+	return (
+		<TabStyled className={theClassName} onClick={onClick}>
+			{tab.title}
+		</TabStyled>
+	);
 };
 
 export default Tab;
 
 const TabStyled = styled.div`
-    background-color: #014444;
-    color: #17b1b1;
+    background-color: #F4D1CB;
+    color: #F49387;
     text-align: center;
-    cursor: pointer;
+	font-weight: 600;
+	letter-spacing: 0.07em;
+	cursor: pointer;
     border-radius: 5px 5px 0px 0px;
     line-height: 40px;
     margin-right: 5px;
@@ -31,7 +33,7 @@ const TabStyled = styled.div`
     width: clamp(75px, 20%, 150px);
 
     &.selected {
-        background-color: teal;
-        color: white;
+        background-color: #F49387;
+        color: #F2EBE7;
     }
 `;

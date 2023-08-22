@@ -4,24 +4,25 @@ import styled from 'styled-components';
 import { breakpoints } from "@/Common/useMediaQuery";
 
 const TabContent = ({ curTab }) => {
-    return (
-        <TabContentStyled className='TabContent'>
-            <div className='column1'>
-                <img src={curTab.image} alt={curTab.title} />
-            </div>
-            <div className='column2'>
-                <h3>{curTab.title}</h3>
-                <div dangerouslySetInnerHTML={{ __html: curTab.text }} />
-            </div>
-        </TabContentStyled>
-    );
+	return (
+		<TabContentStyled className='TabContent'>
+			<div className='column1'>
+				<img src={curTab.image} alt={curTab.title} />
+			</div>
+			<div className='column2'>
+				<h3>{curTab.title}</h3>
+				<div dangerouslySetInnerHTML={{ __html: curTab.text }} />
+			</div>
+		</TabContentStyled>
+	);
 };
 
 export default TabContent;
 
 const TabContentStyled = styled.div`
     padding: 20px;
-    background-color: teal;
+    background-color: #F49387;
+	border-radius: 0px 5px 5px 5px;
 
     @media ${breakpoints.isMediumAndUp} {
         display: grid;
@@ -46,12 +47,12 @@ const TabContentStyled = styled.div`
     .column2 {
         h3 {
             font-size: 30px;
-            color: white;
+            color: #F2EBE7;
         }
 
         p {
             font-size: 18px;
-            color: #8cc6c6;
+            color: #2C2E42;
             margin-bottom: 20px;
             line-height: 150%;
         }
