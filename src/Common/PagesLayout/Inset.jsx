@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Inset = ({ children }) => {
-    return <InsetStyled className="Inset">{children}</InsetStyled>;
+	return <InsetStyled className="Inset">{children}</InsetStyled>;
 };
 
 export default Inset;

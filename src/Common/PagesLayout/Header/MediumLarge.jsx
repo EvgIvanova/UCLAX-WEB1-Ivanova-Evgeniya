@@ -18,9 +18,9 @@ const MediumLarge = () => {
 							<NavLink to={'/'} end>
 								Home
 							</NavLink>
-							<NavLink to={'/staff'}>Staff</NavLink>
+							<NavLink to={'/staff'}>Adoption</NavLink>
 							<NavLink to={'/contact'}>Contact</NavLink>
-							<NavLink to={'/course-work'}>Course</NavLink>
+							<NavLink to={'/course-work'}>Events</NavLink>
 						</nav>
 					</div>
 				</div>
@@ -58,7 +58,7 @@ color: white;
 nav.mainMenu {
     text-align: center;
         a {
-            width: 80px;
+            width: 90px;
             display: inline-block;
 
             line-height: 30px;

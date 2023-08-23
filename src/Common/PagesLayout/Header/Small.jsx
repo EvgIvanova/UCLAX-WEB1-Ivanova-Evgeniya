@@ -45,9 +45,9 @@ const Small = () => {
 					<NavLink onClick={hideMenu} to={'/'} end>
 						Home
 					</NavLink>
-					<NavLink onClick={hideMenu} to={'/staff'}>Staff</NavLink>
+					<NavLink onClick={hideMenu} to={'/staff'}>Adoption</NavLink>
 					<NavLink onClick={hideMenu} to={'/contact'}>Contact</NavLink>
-					<NavLink onClick={hideMenu} to={'/course-work'}>Course</NavLink>
+					<NavLink onClick={hideMenu} to={'/course-work'}>Events</NavLink>
 				</nav>)}
 		</SmallStyled>
 	);

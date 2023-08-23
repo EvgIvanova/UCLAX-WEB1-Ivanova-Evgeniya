@@ -1,20 +1,29 @@
 import styled from 'styled-components';
 
-/* Components ---------------------------*/
-import AccoladeList from './Accolades/AccoladeList';
 
 const StaffBio = ({ member }) => {
-    return (
-        <StaffBioStyled className='StaffBio'>
-            <div className='year'><b>Year Started:</b> {member.yearStarted}</div>
-            <AccoladeList member={member} />
-        </StaffBioStyled>
-    );
+	return (
+		<StaffBioStyled className='StaffBio'>
+			<div className='year'><b>Age:</b> {member.age}</div>
+			<div className='year'><b>Gender:</b> {member.gender}</div>
+			<p>{member.bio}</p>
+		</StaffBioStyled>
+	);
 };
 
 export default StaffBio;
 
 const StaffBioStyled = styled.div`
     padding: 20px;
-    font-size: 14px;
+    font-size: 16px;
+
+	.year {
+		padding: 0px 0px 5px;
+		color: #F2EBE7;
+	}
+
+	p {
+		font-size: 15px;
+		color: #F2EBE7;
+	}
 `;

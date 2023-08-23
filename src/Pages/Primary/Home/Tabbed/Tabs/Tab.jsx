@@ -22,7 +22,7 @@ const TabStyled = styled.div`
     color: #F49387;
     text-align: center;
 	font-weight: 600;
-	letter-spacing: 0.07em;
+	letter-spacing: 0.05em;
 	cursor: pointer;
     border-radius: 5px 5px 0px 0px;
     line-height: 40px;
