@@ -9,29 +9,30 @@ import SubmissionList from './SubmissionList';
 
 const Contact = () => {
 
-    const [submissions, submissionsUpdate] = useState([]);
+	const [submissions, submissionsUpdate] = useState([]);
 
-    const getSubmissions = async () => {
-        const { data } = await axios.get('http://localhost:4059/submissions');
-        submissionsUpdate(data);
-    };
+	const getSubmissions = async () => {
+		const { data } = await axios.get('http://localhost:4059/submissions');
+		submissionsUpdate(data);
+	};
 
-    //When component mounts
-    useEffect(() => {
-        getSubmissions();
-    }, []);
+	//When component mounts
+	useEffect(() => {
+		getSubmissions();
+	}, []);
 
 
 
-    return (
-        <ContactStyled className='Contact'>
-            <Inset>
-                <h1>Contact</h1>
-                <Form getSubmissions={getSubmissions} />
-                <SubmissionList submissions={submissions} />
-            </Inset>
-        </ContactStyled>
-    );
+	return (
+		<ContactStyled className='Contact'>
+			<Inset>
+				<h1>Contact</h1>
+				<Form getSubmissions={getSubmissions} />
+
+				{/* <SubmissionList submissions={submissions} /> */}
+			</Inset>
+		</ContactStyled>
+	);
 };
 
 export default Contact;
