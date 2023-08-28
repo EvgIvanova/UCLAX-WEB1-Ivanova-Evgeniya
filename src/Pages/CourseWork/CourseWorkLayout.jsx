@@ -1,28 +1,32 @@
 import styled from 'styled-components';
-import { Outlet, NavLink } from 'react-router-dom';
 
 /* Component ---------------------------*/
 import Inset from '@/Common/PagesLayout/Inset';
+import EventsCalendar from './EventsCalendar';
+
 
 const CourseWorkLayout = () => {
-    return (
-        <CourseWorkLayoutStyled className='CourseWorkLayout'>
-            <Inset>
-                <h1>Course Work</h1>
-                <nav className='sublinks'>
-                    <NavLink to="/course-work" end>Essays</NavLink>
-                    <NavLink to="/course-work/sun-and-moon">Sun and Moon</NavLink>
-                    <NavLink to="/course-work/responsive">Responsive</NavLink>
-                </nav>
+	return (
+		<CourseWorkLayoutStyled className='CourseWorkLayout'>
+			<Inset>
+				<h1 id="headerevent">Events</h1>
+				<EventsCalendar />
 
-                <Outlet />
-            </Inset>
-        </CourseWorkLayoutStyled>
-    );
+			</Inset>
+		</CourseWorkLayoutStyled>
+	);
 };
 
 export default CourseWorkLayout;
 
 const CourseWorkLayoutStyled = styled.main`
+	h1 {
+		margin-bottom: 30px;
+	}
+
+	/* .Inset {
+		height: 900px;
+	} */
+
 
 `;

@@ -13,7 +13,7 @@ body {
     font-family: "Degular", Helvetica, Arial, sans-serif;
 }
 body {
-    overflow-y: scroll;
+    overflow-y: auto;
     background-color: #f2ebe7;
     min-width: 300px;
 }
@@ -32,7 +32,6 @@ body.modal-open {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -41,6 +40,13 @@ h6 {
     margin: 0px 0px 10px;
     color: #f49387;
 }
+
+h2 {
+    font-family: "New-Spirit", serif;
+    color: #2c2e42;
+    margin: 0px;
+}
+
 p {
     margin: 0px 0px 15px;
     font-size: 16px;
@@ -92,13 +98,21 @@ table {
     border: solid 1px #ccc;
     border-collapse: collapse;
     width: 100%;
-    margin: 20px 0px;
+    margin: 0px 0px;
 
     th,
     td {
         border: solid 1px #ccc;
         padding: 5px;
         vertical-align: top;
+    }
+
+    th {
+        color: #f49387;
+    }
+
+    td {
+        color: #2c2e42;
     }
 }
 
@@ -131,4 +145,27 @@ nav.sublinks a {
 nav.sublinks a:hover,
 nav.sublinks a.active {
     background-color: #014444;
+}
+
+:root {
+    --fc-border-color: #2c2e42;
+    --fc-today-bg-color: #f4d1cb;
+    --fc-event-bg-color: #f49387;
+    --fc-event-border-color: #f49387;
+    --fc-button-bg-color: #2c2e42;
+    --fc-neutral-bg-color: #f4d1cb;
+    --fc-page-bg-color: #f2ebe7;
+}
+
+.fc {
+    p {
+        margin: 0px;
+        font-size: 14px;
+        padding: 0px;
+        white-space: normal;
+    }
+}
+
+.fc-cell-text {
+    white-space: normal;
 }

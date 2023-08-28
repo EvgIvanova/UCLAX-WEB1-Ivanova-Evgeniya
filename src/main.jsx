@@ -14,10 +14,13 @@ import App from "./App";
 import './Common/css/normalize.css';
 import './Common/css/global.scss';
 
+/* React Tooltip CSS ---------------------------*/
+import 'react-tooltip/dist/react-tooltip.css';
+
 ReactDOM.createRoot(document.getElementById("root")).render(
-    <HashRouter>
-        <MediaQueryProvider>
-            <App />
-        </MediaQueryProvider>
-    </HashRouter>
+	<HashRouter>
+		<MediaQueryProvider>
+			<App />
+		</MediaQueryProvider>
+	</HashRouter>
 );
