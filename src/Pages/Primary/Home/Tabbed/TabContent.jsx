@@ -47,7 +47,7 @@ const TabContentStyled = styled.div`
     .column2 {
         h3 {
             font-size: 30px;
-            color: #F2EBE7;
+            color: #F4F3F2;
         }
 
         p {

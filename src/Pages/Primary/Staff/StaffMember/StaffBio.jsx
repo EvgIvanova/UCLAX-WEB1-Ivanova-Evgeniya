@@ -19,11 +19,11 @@ const StaffBioStyled = styled.div`
 
 	.year {
 		padding: 0px 0px 5px;
-		color: #F2EBE7;
+		color: #F4F3F2;
 	}
 
 	p {
 		font-size: 15px;
-		color: #F2EBE7;
+		color: #F4F3F2;
 	}
 `;

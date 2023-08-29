@@ -119,7 +119,7 @@ const FormStyled = styled.form`
     button {
         background-color: #2C2E42;
         padding: 10px 5px;
-        color: #F2EBE7;
+        color: #F4F3F2;
         width: 150px;
         border: none;
         outline: none;

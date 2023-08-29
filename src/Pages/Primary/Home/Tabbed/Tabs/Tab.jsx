@@ -34,6 +34,6 @@ const TabStyled = styled.div`
 
     &.selected {
         background-color: #F49387;
-        color: #F2EBE7;
+        color: #F4F3F2;
     }
 `;

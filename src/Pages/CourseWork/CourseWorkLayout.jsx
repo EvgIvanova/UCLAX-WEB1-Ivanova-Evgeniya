@@ -23,10 +23,4 @@ const CourseWorkLayoutStyled = styled.main`
 	h1 {
 		margin-bottom: 30px;
 	}
-
-	/* .Inset {
-		height: 900px;
-	} */
-
-
 `;
