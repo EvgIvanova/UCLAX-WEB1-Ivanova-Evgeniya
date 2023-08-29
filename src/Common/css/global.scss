@@ -169,3 +169,12 @@ nav.sublinks a.active {
 .fc-cell-text {
     white-space: normal;
 }
+
+.fc .fc-daygrid-day-frame {
+    min-height: 120px;
+    position: relative;
+}
+
+.fc-event-main {
+    padding-bottom: 5px;
+}

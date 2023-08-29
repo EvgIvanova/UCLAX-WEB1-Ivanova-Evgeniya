@@ -7,15 +7,16 @@ import Inset from '@/Common/PagesLayout/Inset';
 
 
 const Home = () => {
-    return (
-        <HomeStyled className='Home'>
-            <h1>Home</h1>
-            <Slideshow />
-            <Inset>
-                <Tabbed />
-            </Inset>
-        </HomeStyled>
-    );
+	return (
+		<HomeStyled className='Home'>
+
+			<Inset>
+				<h1>Home</h1>
+				<Slideshow />
+				<Tabbed />
+			</Inset>
+		</HomeStyled>
+	);
 };
 
 export default Home;
